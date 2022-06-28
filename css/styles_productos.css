@@ -1,0 +1,183 @@
+#Productos {
+    background-color: #C2DED1;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*  Estilos generales   */
+
+.productos__container {
+    display: grid;
+    padding: 1em;
+    margin: 1em;
+}
+
+.productos__container article {
+    width: 100%;
+    position: relative;
+    border: 1px dashed #354259;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.productos__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos__container article h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px 0;
+    background-color: gainsboro;
+}
+
+.productos__item__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #3542598a;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.productos__item__overlay button {
+    width: 10rem;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.productos__item__overlay button:hover {
+    background-color: #ECE5C7;
+    transition: .5s ease;
+}
+
+.productos__item__overlay:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+
+/*  Mobile First    */
+#Productos.g-template {
+    grid-template-columns: repeat(1, 100vw);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+.g-template-productos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "mates"
+        "bombillas"
+        "equipos"
+        "yerberos"
+        "termos"
+        "otros";
+    gap: 5px;
+}
+
+#Mates {
+    grid-area: mates;
+}
+
+#Bombillas {
+    grid-area: bombillas;
+}
+
+#Equipos {
+    grid-area: equipos;
+}
+
+#Yerberos {
+    grid-area: yerberos;
+}
+
+#Termos {
+    grid-area: termos;
+}
+
+#Otros {
+    grid-area: otros;
+}
+
+
+@media screen and (max-width: 720px) {
+    .productos__container article {
+        margin: 2vh 0;
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+    .g-template-productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 30rem);
+        grid-template-areas:
+            "mates mates"
+            "bombillas equipos"
+            "yerberos termos"
+            "otros otros"
+    }
+
+    #Homepage.g-template {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "nav nav"
+            "aside header"
+            "main main"
+            "footer footer";
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .g-template-productos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 30rem);
+        grid-template-areas:
+            "mates bombillas equipos"
+            "mates yerberos termos"
+            "otros otros otros";
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .g-template-productos {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 30rem);
+        grid-template-areas:
+            "mates mates bombillas bombillas equipos equipos"
+            "mates mates yerberos yerberos termos otros"
+    }
+}

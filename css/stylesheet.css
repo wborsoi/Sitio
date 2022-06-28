@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    font-family: 'Amatic SC', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    display: grid;
+    overflow-x: hidden;
+}
+
+.header__title {
+    margin: 1em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #354259;
+}
+
+/*  Estilos de Navbar   */
+.navbar__container {
+    position: sticky;
+    top: 0;
+    padding: 2vh 3vw;
+    background-color: #ECE5C7;
+    z-index: 10;
+}
+
+.navbar__container * {
+    display: inline-block;
+}
+
+.navbar__container ul {
+    list-style: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.navbar__logo {
+    height: 4rem;
+    width: auto;
+}
+
+
+/*  Estilos de pie de pagina  */
+.footer__container {
+    text-align: center;
+    padding: 2vh 2vw;
+    background-color: #898c6d;
+    color: whitesmoke;
+    position: static;
+    bottom: 0;
+}

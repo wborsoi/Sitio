@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=”es”>
+
+<head>
+    <meta charset=”UTF-8″ />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Club del Mate - Contacto</title>
+    <link rel="shortcut icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/styles_contacto.css">
+</head>
+
+<body id="Contacto" class="g-template">
+    <nav class="navbar__container">
+        <img class="navbar__logo" src="../assets/favicon.png" alt="Logo">
+        <ul>
+            <li>
+                <a class="navbar__link" href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="../pages/Nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="../pages/Productos.html">Productos</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="../pages/Sucursales.html">Sucursales</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="../pages/Contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <header class="header__title">
+        <h1>Contactanos</h1>
+    </header>
+
+
+    <aside>
+        <section class="redesSociales__imageContainer">
+            <img src="../assets/contacto/contacto1.jpg" alt="Imagen de callcenter">
+        </section>
+
+        <section class="redesSociales__container">
+            <h2>Nuestras redes sociales</h2>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a href="mailto:info@matelemento.com" target="_blank">Correo</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <main>
+        <section class="contacto__formularioContainer">
+            <form action="">
+                <h2>Dejanos tu mensaje y nos contactaremos contigo</h2>
+                <fieldset class="contacto__fieldset--general">
+                    <legend>Informacion general</legend>
+                    <div class="contacto__form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="contacto__form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido">
+                    </div>
+                    <div class="contacto__form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                </fieldset>
+                <fieldset class="contacto__fieldset--mensaje">
+                    <legend>Mensaje</legend>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </fieldset>
+                <fieldset class="contacto__fieldset--acciones">
+                    <legend>Acciones</legend>
+                    <label>Suscribirme al newsletter</label>
+                    <input type="checkbox" id="newsletter" value="newsletter">
+                    <br>
+                    <input type="submit" name="Enviar" id="enviar">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer__container">
+        <p>©Copyright 2022 - Walter Borsoi</p>
+    </footer>
+</body>
+
+</html>

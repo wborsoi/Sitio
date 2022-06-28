@@ -1,0 +1,87 @@
+#Sucursales {
+    background-color: #C2DED1;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#Local1 {
+    grid-area: local1;
+}
+
+#Local2 {
+    grid-area: local2;
+}
+
+
+/*  Estilos Generales   */
+
+#Sucursales main {
+    text-align: center;
+    padding: 2em;
+    display: grid;
+}
+
+.sucursales__article {
+    display: inline-block;
+    padding: 2em;
+    background-color: #CDC2AE;
+    border-radius: 20px;
+}
+
+.sucursales__article h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.sucursales__article address {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sucursales__article iframe {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*  Mobile First    */
+#Sucursales.g-template {
+    grid-template-columns: repeat(1, 100vw);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+.g-template-sucursales {
+    gap: 2em;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "local1"
+        "local2";
+}
+
+@media screen and (min-width: 720px) {
+    .g-template-sucursales {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            "local1 local2";
+    }
+}

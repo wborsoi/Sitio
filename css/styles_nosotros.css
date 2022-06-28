@@ -1,0 +1,96 @@
+#Nosotros {
+    background-color: #CDC2AE;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#Section1 {
+    grid-area: section1;
+}
+
+#Section2 {
+    grid-area: section2;
+}
+
+#Section3 {
+    grid-area: section3;
+}
+
+.nosotros__sectionContainer {
+    margin: 1em 2em;
+    padding: 2rem;
+    text-align: start;
+    background-color: #C2DED1;
+    border-radius: 20px;
+    color: #354259;
+}
+
+.nosotros__sectionContainer h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nosotros__sectionContainer p {
+    font-size: 2rem;
+}
+
+.nosotros__imageContainer {
+    padding: 3vh 3vw;
+}
+
+.nosotros__imageContainer img {
+    width: 100%;
+    min-height: 40em;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+/*  Mobile First    */
+#Nosotros.g-template {
+    grid-template-columns: repeat(1, 100vw);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+#Nosotros main {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "section1"
+        "section2"
+        "section3";
+}
+
+
+@media screen and (min-width: 720px) {
+    #Nosotros main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "section1 section2"
+            "section3 section3";
+    }
+}

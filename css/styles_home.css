@@ -1,0 +1,142 @@
+#Homepage {
+    background-color: #CDC2AE;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header
+}
+
+aside {
+    grid-area: aside
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.presentation__container {
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.presentation__article {
+    padding: 1rem 2rem;
+    color: #354259;
+    background-color: #C2DED1;
+    border-radius: 20px;
+}
+
+.presentation__article h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.presentation__article p {
+    font-size: 2rem;
+}
+
+.presentation__aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.presentation__aside img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 30em;
+    object-fit: cover;
+}
+
+/*  Nuestros Servicios */
+.nuestrosServicios__container {
+    padding: 3vh 4vw;
+    background-color: #C2DED1;
+    background-image: url('../assets/general/imagen2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.nuestrosServicios__title {
+    width: 40vw;
+    min-width: 15rem;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2vh auto;
+    padding: 0 1rem;
+    color: #354259;
+    background-color: #c2ded1df;
+    border-radius: 20px;
+}
+
+.nuestrosServicios__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nuestrosServicios__list article {
+    display: inline-block;
+    color: #354259;
+    background-color: #cdc2aed8;
+    padding: 3rem;
+    margin: 1vh 2vw;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.nuestrosServicios__list article h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.nuestrosServicios__list article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*  Mobile First    */
+#Homepage.g-template {
+    grid-template-columns: repeat(1, 100vw);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "nav"
+        "header"
+        "aside"
+        "main"
+        "footer";
+}
+
+@media screen and (min-width: 720px) {
+    #Homepage.g-template {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "nav nav"
+            "aside header"
+            "main main"
+            "footer footer";
+    }
+}
