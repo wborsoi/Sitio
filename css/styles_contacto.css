@@ -25,6 +25,18 @@ aside {
 
 /*  Estilos Generales   */
 
+#Contacto .header__title h1 {
+    display: inline;
+    padding: 0 2rem;
+    border-radius: 20px;
+    border-color: #354259;
+    border-style: dashed;
+    border-width: 2px;
+    background-color: #cdc2ae;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
 #Contacto aside {
     display: flex;
     flex-direction: column;
