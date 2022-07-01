@@ -48,12 +48,19 @@ nav .navbar-toggler {
 
 /*  Estilos de pie de pagina  */
 .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 2vh 2vw;
     background-color: #898c6d;
     color: whitesmoke;
     position: static;
     bottom: 0;
+}
+.footer__container p {
+    margin: 0;
 }
 
 /*  Animaciones generales  */

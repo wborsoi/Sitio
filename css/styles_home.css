@@ -56,22 +56,24 @@
 
 /*  Nuestros Servicios */
 .nuestrosServicios__container {
-    padding: 3vh 4vw;
+    padding: 1.5em;
     background-color: #C2DED1;
     background-image: url('../assets/general/imagen2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    text-align: center;
 }
 
 .nuestrosServicios__title {
-    width: 40vw;
+    display: inline-block;
     min-width: 15rem;
     font-size: 4rem;
+    font-weight: bold;
     text-align: center;
-    margin: 2vh auto;
-    padding: 0 1rem;
+    margin: 2vh 0;
+    padding: 0 1em;
     color: #354259;
     background-color: #c2ded1df;
     border-radius: 20px;
@@ -86,13 +88,14 @@
 }
 
 .nuestrosServicios__list article {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     color: #354259;
     background-color: #cdc2aed8;
-    padding: 3rem;
+    padding: 1em;
     margin: 1vh 2vw;
-    width: 10em;
-    height: 10em;
+    width: 13em;
+    height: 13em;
     border-radius: 100%;
     overflow: hidden;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -105,8 +108,8 @@
 }
 
 .nuestrosServicios__list article img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: auto;
+    height: 8em;
+    object-fit: contain;
     object-position: center;
 }
