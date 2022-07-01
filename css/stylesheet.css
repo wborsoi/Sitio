@@ -8,8 +8,7 @@
 }
 
 body {
-    display: grid;
-    overflow-x: hidden;
+
 }
 
 .header__title {
@@ -21,35 +20,31 @@ body {
 }
 
 /*  Estilos de Navbar   */
-.navbar__container {
-    position: sticky;
+
+nav {
+    position: sticky !important;
     top: 0;
-    padding: 2vh 3vw;
     background-color: #ECE5C7;
+    box-shadow: 5px 5px 17px -5px rgba(0,0,0,0.3);
     z-index: 10;
 }
 
-.navbar__container * {
-    display: inline-block;
-}
-
-.navbar__container ul {
-    list-style: none;
-}
-
-.navbar__link {
-    text-decoration: none;
-    color: black;
-    display: block;
-    margin: 10px;
+nav li {
     font-size: 2rem;
 }
 
-.navbar__logo {
-    height: 4rem;
-    width: auto;
+nav .navbar-brand {
+    font-size: 2rem;
 }
 
+nav .navbar-toggler {
+    border: 1px dashed #354259;
+}
+
+#TituloMarca {
+    padding-bottom: 0;
+    border-bottom: 1px dashed #354259;
+}
 
 /*  Estilos de pie de pagina  */
 .footer__container {
