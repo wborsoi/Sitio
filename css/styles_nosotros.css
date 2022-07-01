@@ -18,6 +18,7 @@
 #Nosotros main {
     padding: 2em;
     margin: 0 !important;
+    overflow: hidden;
 }
 
 .nosotros__sectionContainer {
