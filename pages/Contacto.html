@@ -20,7 +20,7 @@
     <script src="/js/bootstrap.js"></script>
 </head>
 
-<body id="Contacto" class="g-template">
+<body id="Contacto">
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -56,61 +56,62 @@
     </header>
 
 
-    <aside>
-        <section class="redesSociales__imageContainer">
-            <img src="../assets/contacto/contacto1.jpg" alt="Imagen de callcenter">
-        </section>
+    <div class="row justify-content-around contacto__pageContainer">
+        <aside class="col-lg-4 row justify-content-between">
+            <section class="redesSociales__imageContainer col-12">
+                <img src="../assets/contacto/contacto1.jpg" alt="Imagen de callcenter">
+            </section>
 
-        <section class="redesSociales__container">
-            <h2>Nuestras redes sociales</h2>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-                </li>
-                <li>
-                    <a href="mailto:info@matelemento.com" target="_blank">Correo</a>
-                </li>
-            </ul>
-        </section>
-    </aside>
+            <section class="redesSociales__container col-12">
+                <h2>Nuestras redes sociales</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@matelemento.com" target="_blank">Correo</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
 
-    <main>
-        <section class="contacto__formularioContainer">
-            <form action="">
-                <h2>Dejanos tu mensaje y nos contactaremos contigo</h2>
-                <fieldset class="contacto__fieldset--general">
-                    <legend>Informacion general</legend>
-                    <div class="contacto__form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
-                    </div>
-                    <div class="contacto__form-group">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido">
-                    </div>
-                    <div class="contacto__form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
-                    </div>
-                </fieldset>
-                <fieldset class="contacto__fieldset--mensaje">
-                    <legend>Mensaje</legend>
-                    <textarea name="mensaje" id="mensaje"></textarea>
-                </fieldset>
-                <fieldset class="contacto__fieldset--acciones">
-                    <legend>Acciones</legend>
-                    <label>Suscribirme al newsletter</label>
-                    <input type="checkbox" id="newsletter" value="newsletter">
-                    <br>
-                    <input type="submit" name="Enviar" id="enviar">
-                </fieldset>
-            </form>
-        </section>
-    </main>
-
+        <main class="col-lg-7">
+            <section class="contacto__formularioContainer">
+                <form action="">
+                    <h2>Dejanos tu mensaje y nos contactaremos contigo</h2>
+                    <fieldset class="contacto__fieldset--general">
+                        <legend>Informacion general</legend>
+                        <div class="row align-items-center">
+                            <label class="col-lg-2" for="nombre">Nombre</label>
+                            <input class="col-lg-10" type="text" id="nombre">
+                        </div>
+                        <div class="row align-items-center">
+                            <label class="col-lg-2" for="apellido">Apellido</label>
+                            <input class="col-lg-10" type="text" id="apellido">
+                        </div>
+                        <div class="row align-items-center">
+                            <label class="col-lg-2" for="email">Email</label>
+                            <input class="col-lg-10" type="email" id="email">
+                        </div>
+                    </fieldset>
+                    <fieldset class="contacto__fieldset--mensaje">
+                        <legend>Mensaje</legend>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </fieldset>
+                    <fieldset class="contacto__fieldset--acciones">
+                        <legend>Acciones</legend>
+                        <label>Suscribirme al newsletter</label>
+                        <input type="checkbox" id="newsletter" value="newsletter">
+                        <br>
+                        <input type="submit" name="Enviar" id="enviar">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>
 
     <footer class="footer__container">
         <p>©Copyright 2022 - Walter Borsoi</p>
