@@ -64,6 +64,13 @@
         text-decoration: none;
         color: $color_darkblue;
     }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
 
 .redesSociales__imageContainer {
