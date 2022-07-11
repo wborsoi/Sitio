@@ -1,0 +1,20 @@
+nav {
+    position: sticky !important;
+    top: 0;
+    background-color: #ECE5C7;
+    box-shadow: 5px 5px 17px -5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+    li, .navbar-brand {
+        font-size: $fontSizeSm;
+    }
+
+    .navbar-toggler{
+        border: 1px dashed $color_darkblue;
+    }
+}
+
+#TituloMarca {
+    padding-bottom: 0;
+    border-bottom: 1px dashed #354259;
+}

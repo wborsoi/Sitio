@@ -1,0 +1,11 @@
+.header__title {
+    margin: 2em;
+    text-align: center;
+
+    h1 {
+        padding: 1em 2em;
+        font-size: $fontSizeXL;
+        font-weight: bold;
+        color: $color_darkblue;
+    }
+}
