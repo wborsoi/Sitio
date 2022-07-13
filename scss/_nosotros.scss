@@ -21,6 +21,42 @@
         margin: 0 !important;
         overflow: hidden;
     }
+
+    .carousel-item {
+        article {
+            text-align: center;
+            margin: 1em;
+            background-color: $color_lightbrown;
+            border-radius: 20px;
+            border-color: $color_darkblue;
+            border-style: dashed;
+            border-width: 2px;
+            -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+            
+            h4 {
+                font-weight: bold;
+                font-size: $fontSizeSm;
+            }
+
+            q {
+                font-size: $fontSizeXs;
+            }
+        }
+
+        img {
+            height: 15em;
+            width: 15em;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 100%;
+            border-color: $color_darkblue;
+            border-style: dashed;
+            border-width: 2px;
+            -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
 }
 
 .nosotros__sectionContainer {

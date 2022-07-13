@@ -49,19 +49,34 @@
     img {
         border-radius: 20px;
         object-fit: cover;
+        min-height: 20em;
     }
 }
 
 /*  Nuestros Servicios */
 .nuestrosServicios__container {
     padding: 1.5em;
-    background-color: #C2DED1;
-    background-image: url('../assets/general/imagen2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.65;
+        background-color: $color_darkblue;
+        background-image: url('../assets/general/imagen2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
 }
 
 .nuestrosServicios__title {
