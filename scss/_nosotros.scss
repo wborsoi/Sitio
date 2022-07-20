@@ -4,11 +4,7 @@
 
     .header__title {
         h1 {
-            display: inline;
-            padding: 0 2rem;
             background-color: map-get($map: $paleta, $key: 'brown');
-            @include borders(20px, dashed, $color_darkblue, 2px);
-            @include box-shadow();
         }
     }
 
@@ -46,19 +42,6 @@
         }
     }
 }
-
-/*  Extend para desafio N°11 - "SASS II + SEO"  */
-.nosotros__title {
-    @extend .header__title;
-    h1 {
-        display: inline;
-        padding: 0 2rem;
-        background-color: map-get($map: $paleta, $key: 'brown');
-        @include borders(20px, dashed, $color_darkblue, 2px);
-        @include box-shadow();
-    }
-}
-/*****************************************************************/
 
 .nosotros__sectionContainer {
     margin: 2em 0;

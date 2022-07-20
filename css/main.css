@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -8351,14 +8350,22 @@ textarea.form-control-lg {
   margin: 0;
   border: 0; }
 
-.header__title, .nosotros__title {
+.header__title {
+  display: block;
   margin: 2em;
   text-align: center; }
-  .header__title h1, .nosotros__title h1, .header__title .h1, .nosotros__title .h1 {
-    padding: 1em 2em;
+  .header__title h1, .header__title .h1 {
+    display: inline-block;
+    padding: 0 2rem;
     font-size: 3.5rem;
     font-weight: bold;
-    color: #354259; }
+    color: #354259;
+    border-radius: 20px;
+    border-style: dashed;
+    border-color: #354259;
+    border-width: 2px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
 
 nav {
   position: sticky !important;
@@ -8647,7 +8654,9 @@ nav {
   padding: 0 1em;
   color: #354259;
   background-color: #c2ded1df;
-  border-radius: 20px; }
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
 
 .nuestrosServicios__list {
   display: flex;
@@ -8680,16 +8689,8 @@ nav {
 #Nosotros {
   background-color: #cdc2ae;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ece5c7' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E"); }
-  #Nosotros .header__title h1, #Nosotros .nosotros__title h1, #Nosotros .header__title .h1, #Nosotros .nosotros__title .h1 {
-    display: inline;
-    padding: 0 2rem;
-    background-color: #cdc2ae;
-    border-radius: 20px;
-    border-style: dashed;
-    border-color: #354259;
-    border-width: 2px;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  #Nosotros .header__title h1, #Nosotros .header__title .h1 {
+    background-color: #cdc2ae; }
   #Nosotros main {
     padding: 2em;
     margin: 0 !important;
@@ -8721,19 +8722,6 @@ nav {
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
 
-/*  Extend para desafio N°11 - "SASS II + SEO"  */
-.nosotros__title h1, .nosotros__title .h1 {
-  display: inline;
-  padding: 0 2rem;
-  background-color: #cdc2ae;
-  border-radius: 20px;
-  border-style: dashed;
-  border-color: #354259;
-  border-width: 2px;
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
-
-/*****************************************************************/
 .nosotros__sectionContainer {
   margin: 2em 0;
   padding: 2em !important;
@@ -8765,16 +8753,8 @@ nav {
 #Productos {
   background-color: #C2DED1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23354259' fill-opacity='0.3' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E"); }
-  #Productos .header__title h1, #Productos .nosotros__title h1, #Productos .header__title .h1, #Productos .nosotros__title .h1 {
-    display: inline;
-    padding: 0 2rem;
-    border-radius: 20px;
-    border-color: #354259;
-    border-style: dashed;
-    border-width: 2px;
-    background-color: #C2DED1;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  #Productos .header__title h1, #Productos .header__title .h1 {
+    background-color: #C2DED1; }
   #Productos.g-template {
     grid-template-columns: repeat(1, 100vw);
     grid-template-rows: repeat(4, auto);
@@ -8885,16 +8865,8 @@ footer {
 #Sucursales {
   background-color: #C2DED1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23354259' fill-opacity='0.3' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E"); }
-  #Sucursales .header__title h1, #Sucursales .nosotros__title h1, #Sucursales .header__title .h1, #Sucursales .nosotros__title .h1 {
-    display: inline;
-    padding: 0 2rem;
-    border-radius: 20px;
-    border-color: #354259;
-    border-style: dashed;
-    border-width: 2px;
-    background-color: #C2DED1;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  #Sucursales .header__title h1, #Sucursales .header__title .h1 {
+    background-color: #C2DED1; }
   #Sucursales main {
     text-align: center;
     padding: 2em;
@@ -8925,16 +8897,8 @@ footer {
 #Contacto {
   background-color: #cdc2ae;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ece5c7' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E"); }
-  #Contacto .header__title h1, #Contacto .nosotros__title h1, #Contacto .header__title .h1, #Contacto .nosotros__title .h1 {
-    display: inline;
-    padding: 0 2rem;
-    border-radius: 20px;
-    border-color: #354259;
-    border-style: dashed;
-    border-width: 2px;
-    background-color: #cdc2ae;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  #Contacto .header__title h1, #Contacto .header__title .h1 {
+    background-color: #cdc2ae; }
   #Contacto aside {
     display: flex;
     flex-direction: column;
@@ -8947,7 +8911,10 @@ footer {
   #Contacto main {
     overflow: hidden;
     margin: 0 !important;
-    padding: 0; }
+    padding: 0;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
   #Contacto .row {
     margin: 0; }
 
@@ -8961,7 +8928,9 @@ footer {
   margin: 2em 0;
   padding: 2em;
   border-radius: 20px;
-  background-color: #C2DED1; }
+  background-color: #C2DED1;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
   .redesSociales__container h2, .redesSociales__container .h2 {
     font-weight: bold;
     font-size: 3rem; }
@@ -8978,7 +8947,10 @@ footer {
 
 .redesSociales__imageContainer {
   height: 30rem;
-  padding: 0 !important; }
+  padding: 0 !important;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
   .redesSociales__imageContainer img {
     width: 100%;
     height: 100%;
@@ -9006,10 +8978,10 @@ footer {
       padding: 1rem;
       margin: 5px 0;
       font-size: 2rem;
-      border-color: #354259;
+      border-radius: 20px;
       border-style: dashed;
-      border-width: thin;
-      border-radius: 20px; }
+      border-color: #354259;
+      border-width: thin; }
       .contacto__formularioContainer form fieldset legend {
         float: none;
         display: inline-block;
@@ -9052,5 +9024,6 @@ footer {
   height: 50px;
   margin: 2vh 0;
   border-radius: 20px;
-  border-width: thin;
-  border-style: dashed; }
+  border-style: dashed;
+  border-color: #354259;
+  border-width: thin; }

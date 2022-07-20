@@ -4,15 +4,7 @@
 
     .header__title {
         h1 {
-            display: inline;
-            padding: 0 2rem;
-            border-radius: 20px;
-            border-color: $color_darkblue;
-            border-style: dashed;
-            border-width: 2px;
             background-color: $color_brown;
-            -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -33,6 +25,8 @@
         overflow: hidden;
         margin: 0 !important;
         padding: 0;
+        border-radius: 20px;
+        @include box-shadow();
     }
 
     .row {
@@ -52,6 +46,7 @@
     padding: 2em;
     border-radius: 20px;
     background-color: $color_lightgreen;
+    @include box-shadow();
 
     h2 {
         font-weight: bold;
@@ -76,6 +71,8 @@
 .redesSociales__imageContainer {
     height: 30rem;
     padding: 0 !important;
+    border-radius: 20px;
+    @include box-shadow();
 
     img {
         width: 100%;
@@ -111,10 +108,7 @@
             padding: 1rem;
             margin: 5px 0;
             font-size: $fontSizeSm;
-            border-color: $color_darkblue;
-            border-style: dashed;
-            border-width: thin;
-            border-radius: 20px;
+            @include borders(20px, dashed, $color_darkblue, thin);
 
             legend {
                 float: none;
@@ -172,8 +166,6 @@
         min-width: 120px;
         height: 50px;
         margin: 2vh 0;
-        border-radius: 20px;
-        border-width: thin;
-        border-style: dashed;
+        @include borders(20px, dashed, $color_darkblue, thin);
     }
 }

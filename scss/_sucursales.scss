@@ -4,15 +4,7 @@
 
     .header__title {
         h1 {
-            display: inline;
-            padding: 0 2rem;
-            border-radius: 20px;
-            border-color: $color_darkblue;
-            border-style: dashed;
-            border-width: 2px;
             background-color: $color_lightgreen;
-            -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -30,8 +22,7 @@
     margin: 2em 0;
     background-color: $color_brown;
     border-radius: 20px;
-    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    @include box-shadow();
 
     h2 {
         font-size: $fontSizeLg;
